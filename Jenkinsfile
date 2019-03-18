@@ -1,11 +1,10 @@
 pipeline {
     agent any
     def app
-    println("RELEASE "+env.RELEASE)
     stages{
         stage('Clone repository') {
             /* Let's make sure we have the repository cloned to our workspace */
-
+            println("RELEASE "+env.RELEASE)
             checkout scm
         }
 
