@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    println("RELEASE "+env.RELEASE)
+    println("VAR  "+env.VARX)
     def app
     stages{
         stage('Clone repository') {
