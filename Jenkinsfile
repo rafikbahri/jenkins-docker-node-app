@@ -1,8 +1,7 @@
 pipeline {
     agent any
-    println("RELEASE "+env.RELEASE)
-    println("VAR  "+env.VARX)
     def app
+    println("RELEASE "+env.RELEASE)
     stages{
         stage('Clone repository') {
             /* Let's make sure we have the repository cloned to our workspace */
